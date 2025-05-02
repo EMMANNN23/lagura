@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -14,17 +15,16 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'Admin',
-            'email' => 'admin@email.com',
+            'email' => 'Admin@gmail.com',
             'password' => Hash::make('password'),
             'role_id' => 1,
         ]);
 
-        User::create([
+         User::create([
             'name' => 'User',
-            'email' => 'user@email.com',
+            'email' => 'User@gmail.com',
             'password' => Hash::make('password'),
             'role_id' => 2,
         ]);
-
     }
 }
