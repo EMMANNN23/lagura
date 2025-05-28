@@ -96,7 +96,7 @@
 
 <div class="login-wrapper">
     <div class="glass-card">
-        <h3>{{ __('Login') }}</h3>
+        <h3>{{ __('👟 EMN SHOES STORE 👟') }}</h3>
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
